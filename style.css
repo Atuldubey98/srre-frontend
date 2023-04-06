@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --grainColor: #87cec7;
+  --blackboard: #565656;
+  --oxy: #76363f;
+  --tan: #c09f80;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  min-height: 5svh;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+header .banner {
+  flex: 3;
+  padding-left: 0.5rem;
+  text-align: center;
+}
+.banner h1 {
+  color: var(--blackboard);
+}
+header ul {
+  flex: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-block: 0.5rem;
+}
+header ul li {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+header ul li:hover {
+  background-color: aliceblue;
+}
+header ul li a {
+  all: unset;
+  color: var(--blackboard);
+  font-weight: bold;
+}
+.carousel {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--grainColor);
+  padding-top: 1rem;
+}
+.carousel img {
+  object-fit: cover;
+  max-width: 100%;
+  border-top-right-radius: 5rem;
+}
+.carousel h1 {
+  align-self: center;
+  text-align: center;
+  font-size: 3rem;
+}
+.services {
+  margin-block: 1rem;
+  margin-inline: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+.service {
+  background-color: var(--grainColor);
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+.service h2 {
+  text-align: center;
+}
+
+.services__section {
+  padding-block: 1rem;
+  background-color: var(--oxy);
+}
+
+.services__section h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+}
+.service img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin-block: 0.5rem;
+}
+.contact__section {
+  padding-block: 1rem;
+  background-color: var(--tan);
+}
+.contact__field {
+  display: grid;
+  gap: 0.8rem;
+}
+.contact__field input {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+.contact__field label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.contact__field textarea {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+}
+.contact__together {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+.contact__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact__section form {
+  max-width: 90%;
+  display: grid;
+  gap: 0.8rem;
+}
+.contact__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__btn button {
+  background-color: var(--oxy);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.contact__btn button:hover{
+  opacity: 0.7;
+}
+.contact__section h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .services {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact__together {
+    grid-template-columns: auto;
+  }
+  .carousel {
+    grid-template-columns: 1fr;
+  }
+  .carousel h1 {
+    position: absolute;
+    color: white;
+  }
+  .carousel img {
+    object-fit: cover;
+    max-width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+}

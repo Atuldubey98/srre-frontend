@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S R Refrigeration and Electricals</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <h1>SRRE</h1>
+      </div>
+      <ul>
+        <li>
+          <span class="material-symbols-outlined link__icon"> home </span
+          ><a href="#home">Home</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined link__icon">
+            design_services </span
+          ><a href="#services">Services</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined link__icon"> call </span
+          ><a href="#contact">Contact</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined link__icon"> shelves </span
+          ><a href="#about">About</a>
+        </li>
+      </ul>
+    </header>
+    <section class="carousel">
+      <img loading="lazy" src="/person.jpg" alt="person" />
+      <h1>S R Refrigeration & Electricals</h1>
+    </section>
+    <div id="services" class="services__section">
+      <h1>Our Services</h1>
+      <section class="services">
+        <div class="service">
+          <h2>Split AC</h2>
+          <img src="/split.jpg" alt="Split AC" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            animi eveniet pariatur consequuntur iste, magni repellat quae odio,
+            est iusto, dolores obcaecati veritatis architecto reprehenderit.
+          </p>
+        </div>
+        <div class="service">
+          <h2>Window AC</h2>
+          <img src="/window.jpg" alt="Window AC" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            animi eveniet pariatur consequuntur iste, magni repellat quae odio,
+            est iusto, dolores obcaecati veritatis architecto reprehenderit.
+          </p>
+        </div>
+        <div class="service">
+          <h2>Ductable AC</h2>
+          <img src="/ductable.webp" alt="Ductable AC" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            animi eveniet pariatur consequuntur iste, magni repellat quae odio,
+            est iusto, dolores obcaecati veritatis architecto reprehenderit.
+          </p>
+        </div>
+        <div class="service">
+          <h2>Cassette AC</h2>
+          <img src="/cassette.png" alt="Cassette AC" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            animi eveniet pariatur consequuntur iste, magni repellat quae odio,
+            est iusto, dolores obcaecati veritatis architecto reprehenderit.
+          </p>
+        </div>
+        <div class="service">
+          <h2>Ductless Mini Splits</h2>
+          <img src="/ductable-split.jpg" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            animi eveniet pariatur consequuntur iste, magni repellat quae odio,
+            est iusto, dolores obcaecati veritatis architecto reprehenderit.
+          </p>
+        </div>
+        <div class="service">
+          <h2>VRF Units</h2>
+          <img src="/vrf.jpg" alt="Vrf Units" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            animi eveniet pariatur consequuntur iste, magni repellat quae odio,
+            est iusto, dolores obcaecati veritatis architecto reprehenderit.
+          </p>
+        </div>
+      </section>
+    </div>
+    <div id="contact" class="contact__section">
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <div class="contact__together">
+          <div class="contact__field">
+            <label for="name">Name :</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              minlength="3"
+              required
+            />
+          </div>
+          <div class="contact__field">
+            <label for="email">Email :</label>
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+        </div>
+        <div class="contact__field">
+          <label for="query">Query :</label>
+          <textarea
+            type="text"
+            name="query"
+            placeholder="Ask your query"
+            required
+          ></textarea>
+        </div>
+        <div class="contact__btn"><button type="submit">Submit</button></div>
+      </form>
+    </div>
+  </body>
+</html>
