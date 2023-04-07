@@ -1,5 +1,19 @@
 const contactForm = document.getElementById("contactForm");
 
+document.onscroll = (e) => {
+  const pageTop = document.documentElement.scrollTop;
+  const pageBottom = pageTop + window.innerHeight;
+  const tags = document.getElementsByClassName("tag");
+  for (let index = 0; index < tags.length; index++) {
+    const element = tags[index];
+    if (element.offsetTop < pageBottom) {
+      element.classList.add("visible");
+    } else {
+      element.classList.remove("visible");
+    }
+  }
+};
+
 contactForm.onsubmit = (e) => {
   e.preventDefault();
   const formFields = new FormData(contactForm);

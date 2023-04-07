@@ -113,6 +113,7 @@ header ul li a {
   max-width: 100%;
   border-radius: 0.5rem;
   margin-block: 0.5rem;
+  animation: fadeIn 1s;
 }
 .contact__section {
   padding-block: 1rem;
@@ -280,6 +281,24 @@ footer {
 }
 .links li a {
   all: unset;
+}
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 700px) {
   .services {
