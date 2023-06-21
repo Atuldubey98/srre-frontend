@@ -205,6 +205,9 @@ header ul li a {
 .services__ensured {
   padding-inline: 1rem;
 }
+.services__ensured {
+  text-align: justify;
+}
 .contact__person {
   display: flex;
   align-items: center;
