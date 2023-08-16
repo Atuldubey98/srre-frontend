@@ -95,6 +95,10 @@ header ul li a {
   border-top: 2px solid var(--primary-color);
   border-radius: 0.2rem;
   padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: justify;
 }
 .services__section h3 {
@@ -117,7 +121,7 @@ header ul li a {
 .service img {
   max-width: 100%;
   border-radius: 0.5rem;
-  margin-block: 0.5rem;
+  margin: auto;
   animation: fadeIn 1s;
 }
 .contact__section {
@@ -184,7 +188,7 @@ header ul li a {
   text-align: center;
 }
 .about__section {
-  margin-inline: 0.3rem;
+  padding-inline: 2rem;
   margin-block: 1rem;
   display: grid;
   gap: 0.8rem;
